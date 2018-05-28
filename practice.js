@@ -40,7 +40,7 @@ var groceries = ["apples", "milk", "eggs", "bread"];
 //If the array does not contain "chocolate", add "chocolate".
 //doubleCheck should return the array.
 function doubleCheck(arr){
-  arr.push('chocolate');
+  if (arr.indexOf("chocolate") === -1) arr.push('chocolate');
 return arr;
 }
 
